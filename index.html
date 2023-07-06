@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download page</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            background: #00000010;
+            box-shadow: 5px 0 5px;
+            backdrop-filter: blur(5px);
+        }
+
+        a {
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid rgb(255, 80, 80);
+            background-color: #ffffff90;
+            color: rgb(255, 120, 120);
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        main,
+        main section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        a.report {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            display: flex;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            z-index: 100;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            min-height: calc(50vh - 10px);
+            padding-bottom: 100px;
+        }
+
+        h2 {
+            margin: 20px;
+            color: rgb(80, 80, 80);
+            text-transform: capitalize;
+        }
+
+        #generatedLink,
+        .verify {
+            cursor: none;
+        }
+
+        #generatedLink {
+            display: none;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="report" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <path
+                d="M17.066406 2.9785156 A 2.0002 2.0002 0 0 0 15.400391 6.1992188L18.400391 10.199219 A 2.0002 2.0002 0 1 0 21.599609 7.8007812L18.599609 3.8007812 A 2.0002 2.0002 0 0 0 17.066406 2.9785156 z M 31.074219 2.9785156 A 2.0002 2.0002 0 0 0 29.400391 3.8007812L26.400391 7.8007812 A 2.0002 2.0002 0 1 0 29.599609 10.199219L32.599609 6.1992188 A 2.0002 2.0002 0 0 0 31.074219 2.9785156 z M 13 13C6.9483321 13 2 17.948332 2 24C2 30.051668 6.9483321 35 13 35L17 35 A 2.0002 2.0002 0 1 0 17 31L13 31C9.1096679 31 6 27.890332 6 24C6 20.109668 9.1096679 17 13 17L17 17 A 2.0002 2.0002 0 1 0 17 13L13 13 z M 31 13 A 2.0002 2.0002 0 1 0 31 17L35 17C38.890332 17 42 20.109668 42 24C42 27.890332 38.890332 31 35 31L31 31 A 2.0002 2.0002 0 1 0 31 35L35 35C41.051668 35 46 30.051668 46 24C46 17.948332 41.051668 13 35 13L31 13 z M 20.074219 36.978516 A 2.0002 2.0002 0 0 0 18.400391 37.800781L15.400391 41.800781 A 2.0002 2.0002 0 1 0 18.599609 44.199219L21.599609 40.199219 A 2.0002 2.0002 0 0 0 20.074219 36.978516 z M 28.066406 36.978516 A 2.0002 2.0002 0 0 0 26.400391 40.199219L29.400391 44.199219 A 2.0002 2.0002 0 1 0 32.599609 41.800781L29.599609 37.800781 A 2.0002 2.0002 0 0 0 28.066406 36.978516 z"
+                fill="#868682" />
+        </svg>
+    </a>
+    <main>
+        <section id="startingSection">
+            <h2 class="download-name">Movie Craz || Online Movies</h2>
+            <a title="Generating link" class="verify">Verifying . . . <span>5</span></a>
+        </section>
+        <section>
+            <a id="generatedLink" title="Generating link" target="_blank">Generating link <span>5</span></a>
+        </section>
+    </main>
+    <footer>
+        <span>All rights reserved 2023</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
